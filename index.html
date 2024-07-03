@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body align="center">
+    <div class="container">
+        <h3 style="margin-top: 100px;">Highscore: <span id="highscore">0</span></h3>
+        <div style="display: flex;flex-direction: row;margin-top: 100px;">
+            <div style="margin-left: 500px;" class="button-wrapper">
+                <div style="background-color: rgb(208, 137, 137); height: 100px; width: 100px; margin-top: 10px ;border-radius: 10px; z-index: -1;position: absolute; left: 500px;" class="button-shadow"></div>
+                <div style="background-color: red; height: 100px; width: 100px; text-align: center;line-height: 90px; border-radius: 10px; color: white;" id="clickButton" class="click-button">Click Me</div>
+            </div>
+            <div style="padding: 10px; margin-left: 10px;top: 50px; background-color:  rgb(247, 144, 19);border-radius: 10px" class="history">
+                <h4>History</h4>
+                <ul style="list-style-type: none;" id="scoreHistory"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
